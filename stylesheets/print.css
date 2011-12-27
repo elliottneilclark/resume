@@ -1,0 +1,4 @@
+/* line 1, ../sass/print.scss */
+html body #pdf {
+  display: none;
+}
