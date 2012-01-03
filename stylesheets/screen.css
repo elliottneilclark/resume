@@ -269,42 +269,59 @@ body ul.talent li.last {
 body .talent.last {
   margin-right: 0;
 }
-
+/* line 119, ../sass/screen.scss */
+body ul.os {
+  margin-top: 0.5em;
+  list-style: none;
+}
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+body ul.os li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
 /* line 122, ../sass/screen.scss */
+body ul.os li {
+  display: inline;
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 127, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 h2 {
   font-size: 155%;
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 h3, h4 {
   font-size: 122%;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 h1, h2, h3, h4 {
   color: #333;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 p {
   font-size: 100%;
   line-height: 18px;
   padding-right: 3em;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 a {
   color: #990003;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
 }

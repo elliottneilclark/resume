@@ -2,3 +2,15 @@
 html body #pdf {
   display: none;
 }
+
+/* line 2, ../sass/print.scss */
+html body #container {
+  border: none;
+  background: #fff;
+  margin: 0em auto;
+}
+
+/* line 7, ../sass/print.scss */
+html body #ft {
+  margin-top: 3em;
+}

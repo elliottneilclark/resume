@@ -116,6 +116,11 @@ body {
            li.last { border-bottom: none;}
       }
       .talent.last { @include last; }
+      ul.os { 
+            margin-top: 0.5em;
+            @include no-bullets;
+            li { display: inline; float: left; margin-right: 1em;}
+      }
 
 }
 
