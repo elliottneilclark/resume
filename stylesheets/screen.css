@@ -134,7 +134,7 @@ body .contact-info {
 }
 /* line 49, ../sass/screen.scss */
 body .section {
-  margin-bottom: 2em;
+  margin-bottom: 1.4em;
 }
 /* line 51, ../sass/screen.scss */
 body .section .label {
@@ -170,13 +170,13 @@ body .section hr {
   width: 790px;
   border: none;
   border-bottom: 1px solid #ccc;
-  margin-top: 1.5em;
+  margin-top: 1.4em;
 }
 /* line 68, ../sass/screen.scss */
 body .job {
   position: relative;
-  margin-bottom: 1.5em;
-  padding-bottom: 1.5em;
+  margin-bottom: 1.4em;
+  padding-bottom: 1.4em;
   border-bottom: 1px solid #ccc;
 }
 /* line 73, ../sass/screen.scss */
@@ -284,7 +284,7 @@ body ul.os li {
 body ul.os li {
   display: inline;
   float: left;
-  margin-right: 1em;
+  margin-right: 7em;
 }
 
 /* line 127, ../sass/screen.scss */
