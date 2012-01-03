@@ -63,28 +63,22 @@ body {
   color: #444;
   text-decoration: none;
   word-spacing: normal;
-}
-
-/* line 21, ../sass/screen.scss */
-body {
   font-size: 75%;
   line-height: 1.5;
-  /*12/18*/
 }
-
-/* line 23, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body #container {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
-  margin: 6.5em auto;
+  margin: 5.5em auto;
   padding-top: 0.5em;
   border: solid #666;
   border-width: 8px 0 2px 0;
   background: whiteSmoke;
 }
-/* line 34, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body .name {
   padding-left: 80px;
   display: inline;
@@ -96,12 +90,12 @@ body .name {
 * html body .name {
   overflow-x: hidden;
 }
-/* line 37, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 body .name h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-/* line 39, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 body .contact-info {
   display: inline;
   float: left;
@@ -120,7 +114,7 @@ body .contact-info:after {
   display: table;
   clear: both;
 }
-/* line 44, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 body .clearFix {
   *zoom: 1;
 }
@@ -130,70 +124,88 @@ body .clearFix:after {
   display: table;
   clear: both;
 }
-/* line 47, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 body .name {
   padding-top: 3em;
 }
-/* line 48, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 body .contact-info {
   padding-top: 4em;
 }
-/* line 51, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
 body .section {
   margin-bottom: 2em;
 }
-/* line 53, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 body .section .label {
   padding-left: 80px;
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 190px;
+  width: 150px;
+  font-style: italic;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body .section .label {
   overflow-x: hidden;
 }
-/* line 57, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 body .section .body {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 590px;
+  width: 630px;
   padding-right: 80px;
 }
 /* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body .section .body {
   overflow-x: hidden;
 }
-/* line 62, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
+body .section p {
+  font-family: georgia, serif;
+}
+/* line 61, ../sass/screen.scss */
+body .section hr {
+  width: 790px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 1.5em;
+}
+/* line 68, ../sass/screen.scss */
 body .job {
   position: relative;
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #ccc;
 }
-/* line 67, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 body .job h4 {
   position: absolute;
   top: 0.35em;
   right: 0;
 }
-/* line 68, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 body .job h3 {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.75em;
 }
-/* line 71, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
+body .job p {
+  margin: 0.75em 0 1em 0;
+}
+/* line 78, ../sass/screen.scss */
 body .job.last {
   border-bottom: 0;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
-/* line 73, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body div.talent {
   width: 33%;
   margin: 0;
   float: left;
 }
-/* line 78, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 body #ft {
   padding-left: 80px;
   display: inline;
@@ -206,33 +218,37 @@ body #ft {
 * html body #ft {
   overflow-x: hidden;
 }
-/* line 82, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 body #ft p {
   text-align: center;
   margin-bottom: 3em;
 }
-/* line 88, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body a#pdf {
   display: block;
   float: left;
   background: #666;
   color: white;
-  padding: 6px 50px 6px 12px;
+  padding: 6px 50px 6px 45px;
   margin-bottom: 6px;
   text-decoration: none;
 }
-/* line 98, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 body a#pdf:hover {
   background: #222;
 }
-/* line 99, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 body ul.talent {
   margin-top: 0.5em;
-  width: 25%;
+  display: inline;
   float: left;
-  margin: 0;
-  padding: 0;
+  margin-right: 10px;
+  width: 150px;
   list-style: none;
+}
+/* line 147, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body ul.talent {
+  overflow-x: hidden;
 }
 /* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.6/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 body ul.talent li {
@@ -240,52 +256,55 @@ body ul.talent li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 106, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 body ul.talent li {
   line-height: 24px;
   border-bottom: 1px solid #ccc;
 }
-/* line 108, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
+body ul.talent li.last {
+  border-bottom: none;
+}
+/* line 118, ../sass/screen.scss */
 body .talent.last {
   margin-right: 0;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 h1 {
   font-size: 48px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 h2 {
-  font-size: 152%;
+  font-size: 155%;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 h3, h4 {
   font-size: 122%;
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 h1, h2, h3, h4 {
   color: #333;
-  font-family: georgia, serif;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 p {
   font-size: 100%;
   line-height: 18px;
   padding-right: 3em;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 a {
   color: #990003;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 a:hover {
   text-decoration: none;
 }
