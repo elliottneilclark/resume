@@ -19,7 +19,6 @@ body {
      font-size: 75%; line-height: 1.5;
 
      #container {
-                
                 @include container; 
                 margin: 5.5em auto;
                 padding-top: 0.5em;
@@ -27,7 +26,6 @@ body {
                 border-width: 8px 0 2px 0;
                 background: whiteSmoke;
                 //@include showgrid;
-                
       }
      .name {
            @include prepend(2);
@@ -35,16 +33,15 @@ body {
            h1 { text-transform: uppercase; letter-spacing: 2px; }
      }
      .contact-info { 
-           @include column(6, true);
+           @include column(6);
            @include append(2);
-           @include pie-clearfix
+           @include pie-clearfix;
+           padding-top: 4.1em; 
      }
      .clearFix {
            @include pie-clearfix; 
      }
      .name { padding-top: 3em;}
-     .contact-info { padding-top: 4em; }
-
 
      .section { 
               margin-bottom: 1.4em;

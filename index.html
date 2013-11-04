@@ -34,51 +34,72 @@
     <div class="section">
       <div class="name">
         <h1>Elliott Clark</h1>
-
+        <h2>Apache HBase PMC Member, Comitter</h2>
         <h2>Big Data Engineer, Tech Lead</h2>
       </div>
-
       <div class="contact-info">
         <h3><a id="pdf" href="resume.pdf" name="pdf">Download PDF</a></h3>
-
         <h3><a href="mailto:elliott.neil.clark@gmail.com">elliott.neil.clark@gmail.com</a></h3>
-
         <h3>(415) 56CLARK</h3>
       </div>
-
       <div class="clearFix"></div>
-
       <hr />
-
     </div>
-
     <div class="section">
       <div class="label">
         <h2>Experience</h2>
       </div>
-
       <div class="body">
         <div class="job">
+          <h2>Cloudera</h2>
+          <h3>HBase Engineer</h3>
+          <h4>Oct 2012 &mdash; Present</h4>
+
+          <p>Became an Apache HBase Project Managment Comitte (PMC).</p>
+
+          <p>Instrumented HBase and HDFS to enable RPC tracing using HTrace and Zipkin; Dapper like
+          systems enable HBase developers to debug and tune their use cases with more confidence.</p>
+
+          <p>Created a new compaction algorithm that performs better than old default selection code.
+            This resulted in 10x better IO utilization in certian use cases.</p>
+
+          <p>Created new UI for HBase Master and Regionserver daemons in order to
+            encourage addoption of HBase.</p>
+        </div>
+
+        <div class="job">
+          <h2>StumbleUpon</h2>
+          <h3>HBase Engineer</h3>
+          <h4>Apr 2012 &mdash; Oct 2012</h4>
+
+          <p>Became an Apache HBase comitter.</p>
+
+          <p>Deployed new versions of HBase to production clusters with no downtime.</p>
+
+          <p>Created new load balancing algorith.  New Stochacastic Load Balancer takes into
+            consideration, data locality, request through put, and data sizes to better utilize
+            server resources.</p>
+        </div>
+
+        <div class="job">
           <h2>ngmoco;)</h2>
-
           <h3>Lead Engineer, Data &amp; Analytics</h3>
-
-          <h4>Aug 2010 &mdash; Present</h4>
+          <h4>Aug 2010 &mdash; Apr 2012</h4>
 
           <p>Created Scala server infrastructure, including servlet
           front-end and Akka back-end services. The new design improved
           performance, up to 15k messages per second per server, and allowed for new features.</p>
 
           <p>Architected Hadoop jobs using Hadoop, Avro, and
-          Hbase that allow executives, designers, and engineers to track revenue and user behavior from more
+          HBase that allow executives, designers, and engineers to track revenue and user behavior from more
           than a billion messages a day.</p>
           
           <p>Promoted twice into a position managing two other
           individual contributors in the Analytics group.</p>
 
           <p>Built software to start, stop, and add to
-          Hadoop/Hbase/Zookeeper clusters on Amazon's EC2 allowing
-          the group to rapidly adopt Hadoop and Hbase.</p>
+          Hadoop/HBase/Zookeeper clusters on Amazon's EC2 allowing
+          the group to rapidly adopt Hadoop and HBase.</p>
 
           <p>Designed and implemented JavaScript UI to display tens
           of thousands of data points per day per game in a
@@ -132,7 +153,6 @@
           <p>Drove customer adoption WPF solutions by answering
           questions on MSDN Forums and Codeplex.com.</p>
 
-         
         </div>
 
         <div class="job">
@@ -152,7 +172,7 @@
           using the WPF News Reader SDK.</p>
         </div>
 
-        <div class="job middle">
+        <div class="job last">
           <h2>NifeEdge Software</h2>
 
           <h3>Founder</h3>
@@ -166,47 +186,6 @@
           expand sales and track employee productivity for Area
           Circulations Inc.</p>
         </div>
-
-        <div class="job">
-          <h2>Kennesaw State University</h2>
-
-          <h3>Kids College Instructor</h3>
-
-          <h4>2003 &mdash; 2006</h4>
-
-          <p>Named "Instructor of the Year" for the Continuing
-          Education Division in July, 2006.</p>
-
-          <p>Developed entry and advanced level curriculum, that are
-          still taught today, for classes in computer game
-          programming.</p>
-        </div>
-
-        <div class="job">
-          <h2>UsaTestPrep.com</h2>
-
-          <h3>Contractor</h3>
-
-          <h4>2005 &mdash; 2005</h4>
-
-          <p>Freelance PHP/MySQL coding for interactive web
-          application.</p>
-
-          <p>Created and delivered a login and login tracking
-          system on time and on budget.</p>
-        </div>
-
-        <div class="job last">
-          <h2>GlobalCompass.com</h2>
-
-          <h3>Assistant Network Technician</h3>
-
-          <h4>2002 &mdash; 2003</h4>
-
-          <p>Maintained over 200 Linux systems.</p>
-
-          <p>Helped resolve network emergencies.</p>
-        </div>
       </div>
 
       <div class="clearFix"></div>
@@ -217,9 +196,10 @@
       <div class="label"><h2>Open Source</h2></div>
       <div class="body">
         <ul class="os">
-          <li> <a href="https://issues.apache.org/jira/browse/HBASE-4240">HBASE-4240</a> </li>
-          <li> <a href="https://issues.apache.org/jira/browse/HBASE-3541">HBASE-3541</a> </li>
-          <li> <a href="https://issues.apache.org/jira/browse/HBASE-4149">HBASE-4149</a> </li>
+          <li> <a href="https://issues.apache.org/jira/issues/?jql=resolution%20%3D%20Fixed%20AND%20assignee%20%3D%20eclark%20AND%20status%20in%20(Resolved%2C%20Closed)">Apache Jira Issues</a> </li>
+          <li> <a href="https://github.com/cloudera/htrace">HTrace</a> </li>
+          <li> <a href="https://github.com/twitter/zipkin/pull/274">Zipkin</a> </li>
+          <li> <a href="https://github.com/cloudera/impala">Impala</a> </li>
           <li> <a href="https://github.com/elliottneilclark">Github Page</a> </li>
         </ul>
       </div>
@@ -270,13 +250,11 @@
         <ul class="talent">
           <li>Hadoop</li>
 
-          <li>Hbase</li>
-
-          <li>Mysql</li>
+          <li>HBase</li>
 
           <li>JUnit</li>
-          
-          <li>Sbt</li>
+
+          <li>SBT</li>
 
           <li class="last">Scalatest &amp; Specs 2</li>
         </ul>
@@ -288,11 +266,9 @@
 
           <li>JavaScript</li>
 
-          <li>Ruby</li>
-
           <li>Python</li>
 
-          <li class="last">C#</li>
+          <li class="last">Ruby</li>
         </ul>
 
         <ul class="talent">
@@ -301,8 +277,6 @@
           <li>Ruby on Rails</li>
 
           <li>Django</li>
-
-          <li>WPF</li>
 
           <li>Avro</li>
 
