@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "//elliottclark.info/"
+baseURL = "/"
 languageCode = "en"
 title = "Elliott Clark | Dev"
 theme = "hugo-devresume-theme"
