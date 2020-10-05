@@ -42,7 +42,7 @@ googleAnalytics = "UA-28071483-1"
         text = "elliott.neil.clark@gmail.com"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "//www.elliottclark.info"
+        url = "https://www.elliottclark.info"
         text = "www.elliottclark.info"
 
 
