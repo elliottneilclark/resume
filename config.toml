@@ -86,6 +86,8 @@ googleAnalytics = "UA-28071483-1"
         [[params.skills.list.items]]
         details = "Strong ownership"
         [[params.skills.list.items]]
+        details = "Mentoring"
+        [[params.skills.list.items]]
         details = "Technical communication"
 
 
@@ -111,7 +113,7 @@ googleAnalytics = "UA-28071483-1"
         [[params.awards.list]]
         name = "HBase PMC"
         body = "Elected to Apache HBase project management comittee."
-        date = "2019"
+        date = "2013"
 
 
 
@@ -186,13 +188,11 @@ googleAnalytics = "UA-28071483-1"
         [[params.experience.list.items]]
         details = "Developed, built, debugged, and deployed open source Hadoop based solutions to customers' on premises and in cloud clusters."
         [[params.experience.list.items]]
-        details = "Became an Apache HBase Project Management Committee (PMC) member."
-        [[params.experience.list.items]]
         details = "Instrumented HBase and HDFS to enable RPC tracing using HTrace and Zipkin; the Dapper like system enables HBase developers to debug and tune their uses of HBase with more confidence."
         [[params.experience.list.items]]
         details = "Created a new compaction algorithm that has 10x better hardware utilization."
         [[params.experience.list.items]]
-        details = "Created new UI for HBase Master and Regionserver daemons to encourage adoption of HBase."
+        details = "Created new UI for HBase Master and Regionserver daemons increasing adoption and of HBase."
 
         [[params.experience.list]]
         title = "HBase Engineer"
@@ -225,7 +225,7 @@ googleAnalytics = "UA-28071483-1"
         dates = "2009 - 2010"
         company = "316 Ventures"
         [[params.experience.list.items]]
-        details = "Built and designed thrillcall.com including frontend, backend, and analytics with one other engineer for the startup"
+        details = "Built and designed thrillcall.com including frontend, backend, and analytics with one other startup engineer"
         [[params.experience.list.items]]
         details = "Implemented real-time and background content scraping systems to process and display pricing data from external web sources."
         [[params.experience.list.items]]
@@ -291,7 +291,7 @@ googleAnalytics = "UA-28071483-1"
         [[params.information.list.items]]
         details = "2013 · Using Metrics to Monitor and Debug Apache HBase"
         [[params.information.list.items]]
-        details = "2013 ·Impala: Using SQL to Extract Value from Apache HBase"
+        details = "2013 · Impala: Using SQL to Extract Value from Apache HBase"
 
 
 
