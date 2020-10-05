@@ -289,6 +289,8 @@ googleAnalytics = "UA-28071483-1"
         [[params.information.list.items]]
         details = "2016 · HBaseCon Keynote"
         [[params.information.list.items]]
+        details = "2013 · HBase Tracing"
+        [[params.information.list.items]]
         details = "2013 · Using Metrics to Monitor and Debug Apache HBase"
         [[params.information.list.items]]
         details = "2013 · Impala: Using SQL to Extract Value from Apache HBase"
