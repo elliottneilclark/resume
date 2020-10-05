@@ -150,7 +150,7 @@ googleAnalytics = "UA-28071483-1"
 
     [params.summary]
         enable = true
-        text = "I am a distributed systmes engineer who focuses on shipping dependable software based solutions. From creation to testing to deployment to production I have experience with all stages of latency sensitive machine learning powered distributed systems. I have been the tech lead for some of the largest online transaction processing (OLTP) key value stores in the world, powering apps useed by billions of people. I'm looking to lead teams who are building the most challenging impactful software solutions."
+        text = "I am a distributed systems engineer who focuses on shipping dependable software based solutions. From creation to testing to deployment to production I have experience with all stages of latency sensitive machine learning powered distributed systems. I have been the tech lead for some of the largest online transaction processing (OLTP) key value stores in the world, powering apps used by billions of people. I'm looking to lead teams who are building the most challenging impactful software solutions using cutting edge technologies."
 
 
 
@@ -167,9 +167,9 @@ googleAnalytics = "UA-28071483-1"
         dates = "2014 - Present"
         company = "Facebook"
         [[params.experience.list.items]]
-        details = "Responsible for all of Ads Infra stability, performance, correctness, and disaster preparedness."
+        details = "Responsible for all of Ads infrastructure stability, performance, correctness, and disaster preparedness."
         [[params.experience.list.items]]
-        details = "Coordinated incident response and helped solve the toughest production stability events for Ads"
+        details = "Coordinated incident responses and helped solve the toughest production stability events for Ads"
         [[params.experience.list.items]]
         details = "Created automatic A/B statistical testing of the most critical machine learning ads targeting and bidding systems."
         [[params.experience.list.items]]
@@ -184,7 +184,7 @@ googleAnalytics = "UA-28071483-1"
         dates = "2012 - 2014"
         company = "Cloudera"
         [[params.experience.list.items]]
-        details = "Developed, built, debugged, and deployed open source Hadoop based solutions to customers' on premises and in colud clusters."
+        details = "Developed, built, debugged, and deployed open source Hadoop based solutions to customers' on premises and in cloud clusters."
         [[params.experience.list.items]]
         details = "Became an Apache HBase Project Management Committee (PMC) member."
         [[params.experience.list.items]]
@@ -272,24 +272,26 @@ googleAnalytics = "UA-28071483-1"
         [[params.projects.list]]
         title = "HBase"
         meta = "Open Source"
-        tagline = "Bigtable inspired key value store focusing on consistency and correctness, while delivering world class key value storage speed."
+        tagline = "BigTable inspired key value store focusing on consistency and correctness, while delivering world class key value storage speed."
 
 
         [[params.projects.list]]
         title = "Folly"
         meta = "Open Source"
-        tagline = "Facebook's base CPP library providing threading, locking, collections, metrics and other base components of observable performant C++ code."
+        tagline = "Facebook's base C++ library providing threading, locking, collections, metrics and other base components of observable performant C++ code."
 
 
     [params.information]
         enable = true
 
         [[params.information.list]]
-        title = "Papers"
+        title = "Papers/Talks"
         [[params.information.list.items]]
         details = "2016 · HBaseCon Keynote"
         [[params.information.list.items]]
         details = "2013 · Using Metrics to Monitor and Debug Apache HBase"
+        [[params.information.list.items]]
+        details = "2013 ·Impala: Using SQL to Extract Value from Apache HBase"
 
 
 
