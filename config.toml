@@ -113,7 +113,11 @@ googleAnalytics = "UA-28071483-1"
         [[params.awards.list]]
         name = "HBase PMC"
         body = "Elected to Apache HBase project management comittee."
-        date = "2013"
+        date = "2014"
+        [[params.awards.list]]
+        name = "HBase Committer"
+        body = "Nominated and elected to Apache HBase committer."
+        date = "2012"
 
 
 
