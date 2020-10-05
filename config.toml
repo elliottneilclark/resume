@@ -292,7 +292,8 @@ googleAnalytics = "UA-28071483-1"
         details = "2013 · Using Metrics to Monitor and Debug Apache HBase"
         [[params.information.list.items]]
         details = "2013 · Impala: Using SQL to Extract Value from Apache HBase"
-
+        [[params.information.list.items]]
+        details = "2012 · Unique Sets on HBase and Hadoop"
 
 
 
