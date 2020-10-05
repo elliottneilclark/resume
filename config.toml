@@ -175,7 +175,7 @@ googleAnalytics = "UA-28071483-1"
         [[params.experience.list.items]]
         details = "Created automatic A/B statistical testing of the most critical machine learning ads targeting and bidding systems."
         [[params.experience.list.items]]
-        details = "Pioneered innovative production traffic led fuzzing, to ensure the safety and stability of the most revenue critical code."
+        details = "Pioneered innovative production traffic guided fuzzing, to ensure the safety and stability of the most revenue critical code."
         [[params.experience.list.items]]
         details = "Designed and lead the implementation and production deployment of a unique datastore, with linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API."
         [[params.experience.list.items]]
