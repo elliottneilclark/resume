@@ -135,13 +135,15 @@ googleAnalytics = "UA-28071483-1"
         enable = true
 
         [[params.interests.list]]
+        name = "Entrepreneurship"
+        [[params.interests.list]]
         name = "Cooking"
         [[params.interests.list]]
         name = "Brewing"
         [[params.interests.list]]
         name = "Paintball"
         [[params.interests.list]]
-        name = "Travelling"
+        name = "Traveling"
 
 
 
