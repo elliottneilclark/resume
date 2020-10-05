@@ -303,7 +303,7 @@ googleAnalytics = "UA-28071483-1"
         [[params.social.list]]
         icon = "fab fa-github-square"
         url = "https://github.com/elliottneilclark"
-        title = "elliottneillclark"
+        title = "elliottneilclark"
         [[params.social.list]]
         icon = "fab fa-linkedin"
         url = "https://linkedin.com/in/elliottnclark"
