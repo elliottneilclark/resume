@@ -22,8 +22,3 @@
     row-gap: 0;
   }
 }
-.pdfTip {
-  margin-top: var(--space-lg);
-  font-size: var(--text-small);
-  color: var(--c-stone);
-}

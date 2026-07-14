@@ -1,6 +1,7 @@
 ---
 import Hero from '../components/Hero.astro';
 import IndexList, { type IndexItem } from '../components/IndexList.astro';
+import SectionMarker from '../components/SectionMarker.astro';
 import { cv } from '../data/cv';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import styles from './index.module.css';
@@ -27,20 +28,23 @@ const links = [
   <div class="container">
     <Hero />
 
-    <nav class={styles.links} aria-label="Elsewhere">
-      {links.map((l) => (
-        <a
-          class={styles.link}
-          href={l.href}
-          target={l.external ? '_blank' : undefined}
-          rel={l.external ? 'noopener noreferrer' : undefined}
-        >{l.label}</a>
-      ))}
+    <nav class={styles.section} aria-labelledby="elsewhere-label">
+      <SectionMarker as="h2" id="elsewhere-label">Elsewhere</SectionMarker>
+      <div class={styles.links}>
+        {links.map((l) => (
+          <a
+            class={styles.link}
+            href={l.href}
+            target={l.external ? '_blank' : undefined}
+            rel={l.external ? 'noopener noreferrer' : undefined}
+          >{l.label}</a>
+        ))}
+      </div>
     </nav>
 
     <section class={styles.section} aria-labelledby="projects-label">
-      <h2 id="projects-label" class={styles.heading}>Projects</h2>
-      <IndexList items={projectItems} />
+      <SectionMarker as="h2" id="projects-label">Projects</SectionMarker>
+      <div class={styles.body}><IndexList items={projectItems} /></div>
     </section>
   </div>
 </BaseLayout>
