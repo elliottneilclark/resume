@@ -1,0 +1,47 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs) var(--space-md);
+  font-size: var(--text-small);
+}
+.item {
+  color: var(--c-ink-soft);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in oklab, currentColor 32%, transparent);
+  transition:
+    text-decoration-color var(--dur) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.item:hover {
+  color: var(--c-accent);
+  text-decoration-color: var(--c-accent);
+}
+/* Visibility owned here, not via the global screen-only/print-only utilities:
+   those live in @layer utilities, and this module's unlayered rules would
+   otherwise out-rank them and leak the print block onto the screen. */
+.printList {
+  display: none;
+}
+.printLabel {
+  color: var(--c-stone);
+}
+@media print {
+  .row {
+    display: none;
+  }
+  .printList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--text-small);
+    color: var(--c-ink);
+  }
+  .printList li {
+    white-space: nowrap;
+  }
+}

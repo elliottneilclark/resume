@@ -1,0 +1,11 @@
+---
+import styles from './SectionMarker.module.css';
+
+interface Props {
+  id?: string | undefined;
+  as?: 'p' | 'h2' | 'h3';
+}
+const { id, as = 'p' } = Astro.props as Props;
+const Tag = as;
+---
+<Tag class={styles.marker} id={id}><slot /></Tag>

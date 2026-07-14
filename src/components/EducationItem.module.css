@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2xs) var(--space-md);
+  padding-block: var(--space-2xs);
+}
+@media print {
+  .item {
+    break-inside: avoid;
+  }
+}
+.school {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+}
+.degree {
+  font-size: var(--text-small);
+  color: var(--c-ink-soft);
+}

@@ -1,0 +1,15 @@
+---
+import styles from './ResumeSection.module.css';
+import SectionMarker from './SectionMarker.astro';
+
+interface Props {
+  title: string;
+  id: string;
+  class?: string;
+}
+const { title, id, class: className } = Astro.props;
+---
+<section class:list={[styles.section, className]} id={id} aria-labelledby={`${id}-label`}>
+  <SectionMarker as="h2" id={`${id}-label`}>{title}</SectionMarker>
+  <div class={styles.body}><slot /></div>
+</section>

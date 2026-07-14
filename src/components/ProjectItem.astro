@@ -1,0 +1,20 @@
+---
+import type { Project } from '../data/cv';
+import styles from './ProjectItem.module.css';
+
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+<article class={styles.item}>
+  <p class={styles.name}>
+    {project.link ? <a href={project.link} target="_blank" rel="noopener noreferrer">{project.name}</a> : project.name}
+  </p>
+  <p class={styles.tagline}>{project.tagline}</p>
+  {project.tags && project.tags.length > 0 && (
+    <ul class={styles.tags} role="list">
+      {project.tags.map((t) => <li>{t}</li>)}
+    </ul>
+  )}
+</article>

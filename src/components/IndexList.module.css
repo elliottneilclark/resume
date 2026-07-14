@@ -1,0 +1,53 @@
+/* Whitespace, not hairlines, carries the rhythm here — calmer than dividers. */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-3xs) var(--space-md);
+}
+.label {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 500;
+}
+.label a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in oklab, currentColor 22%, transparent);
+  transition:
+    text-decoration-color var(--dur) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.label a:hover {
+  color: var(--c-accent);
+  text-decoration-color: var(--c-accent);
+}
+/* Middot keyword line — same meta tier and separator as the résumé tag bands. */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-2xs);
+  font-size: var(--text-small);
+  color: var(--c-stone);
+}
+.tags li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+}
+.tags li:not(:last-child)::after {
+  content: '·';
+  color: var(--c-hair);
+}
+.value {
+  font-size: var(--text-small);
+  color: var(--c-stone);
+}

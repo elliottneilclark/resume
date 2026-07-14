@@ -1,0 +1,46 @@
+---
+import Hero from '../components/Hero.astro';
+import IndexList, { type IndexItem } from '../components/IndexList.astro';
+import { cv } from '../data/cv';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import styles from './index.module.css';
+
+const projectItems: IndexItem[] = cv.projects.map((p) => ({
+  label: p.name,
+  href: p.link,
+  external: true,
+  tags: p.tags,
+}));
+
+const links = [
+  { label: 'Email', href: `mailto:${cv.contact.email}`, external: false },
+  ...cv.contact.socials.map((s) => ({
+    label: s.name,
+    href: s.url,
+    external: true,
+  })),
+  { label: 'Writing', href: cv.contact.writing, external: true },
+  { label: 'Consulting', href: cv.contact.consulting, external: true },
+];
+---
+<BaseLayout image={cv.profile.photo}>
+  <div class="container">
+    <Hero />
+
+    <nav class={styles.links} aria-label="Elsewhere">
+      {links.map((l) => (
+        <a
+          class={styles.link}
+          href={l.href}
+          target={l.external ? '_blank' : undefined}
+          rel={l.external ? 'noopener noreferrer' : undefined}
+        >{l.label}</a>
+      ))}
+    </nav>
+
+    <section class={styles.section} aria-labelledby="projects-label">
+      <h2 id="projects-label" class={styles.heading}>Projects</h2>
+      <IndexList items={projectItems} />
+    </section>
+  </div>
+</BaseLayout>

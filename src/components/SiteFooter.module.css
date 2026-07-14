@@ -1,0 +1,47 @@
+.footer {
+  margin-top: var(--space-3xl);
+  border-top: 1px solid var(--c-hair);
+  padding-block: var(--space-xl) var(--space-lg);
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-2xl);
+  align-items: start;
+  justify-content: space-between;
+}
+/* Same treatment as the emails in the CV header (ContactLine .item): quiet
+   ink-soft link, amber only on hover — so amber reads as the header color,
+   not a footer accent. */
+.email {
+  color: var(--c-ink-soft);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in oklab, currentColor 32%, transparent);
+  transition:
+    text-decoration-color var(--dur) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.email:hover {
+  color: var(--c-accent);
+  text-decoration-color: var(--c-accent);
+}
+.tag {
+  margin-top: var(--space-2xs);
+  font-size: var(--text-small);
+  color: var(--c-stone);
+  max-width: 32ch;
+}
+.base {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--c-hair);
+  font-size: var(--text-label);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-stone);
+}

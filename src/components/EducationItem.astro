@@ -1,0 +1,13 @@
+---
+import type { Education } from '../data/cv';
+import styles from './EducationItem.module.css';
+
+interface Props {
+  item: Education;
+}
+const { item } = Astro.props;
+---
+<div class={styles.item}>
+  <span class={styles.school}>{item.school}</span>
+  <span class={styles.degree}>{item.degree}</span>
+</div>

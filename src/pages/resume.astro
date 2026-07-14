@@ -1,0 +1,35 @@
+---
+import CvHeader from '../components/CvHeader.astro';
+import EducationItem from '../components/EducationItem.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import ProjectItem from '../components/ProjectItem.astro';
+import ResumeSection from '../components/ResumeSection.astro';
+import { cv } from '../data/cv';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import styles from './resume.module.css';
+---
+<BaseLayout title="Résumé" image={cv.profile.photo}>
+  <div class="container">
+    <CvHeader />
+
+    <ResumeSection title="About" id="about">
+      <p class={styles.about}>{cv.about}</p>
+    </ResumeSection>
+
+    <ResumeSection title="Experience" id="experience">
+      {cv.work.map((w) => <ExperienceItem work={w} />)}
+    </ResumeSection>
+
+    <ResumeSection title="Projects" id="projects">
+      <div class={styles.projectGrid}>
+        {cv.projects.map((p) => <ProjectItem project={p} />)}
+      </div>
+    </ResumeSection>
+
+    <ResumeSection title="Education" id="education">
+      {cv.education.map((e) => <EducationItem item={e} />)}
+    </ResumeSection>
+
+    <p class:list={['screen-only', styles.pdfTip]}>Save as PDF — press ⌘P (Ctrl + P)</p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import type { Work } from '../data/cv';
+import styles from './ExperienceItem.module.css';
+
+interface Props {
+  work: Work;
+}
+const { work } = Astro.props;
+const dates = `${work.start} – ${work.end ?? 'Present'}`;
+---
+<article class={styles.item}>
+  <div class={styles.head}>
+    <h3 class={styles.company}>{work.company}</h3>
+    <span class={styles.dates}>{dates}</span>
+  </div>
+  <p class={styles.role}>{work.title}</p>
+  <ul class={styles.bullets} role="list">
+    {work.achievements.map((a) => <li>{a}</li>)}
+  </ul>
+  {work.tags && work.tags.length > 0 && (
+    <ul class={styles.tags} role="list">
+      {work.tags.map((t) => <li>{t}</li>)}
+    </ul>
+  )}
+</article>

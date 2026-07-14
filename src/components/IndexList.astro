@@ -1,0 +1,40 @@
+---
+import styles from './IndexList.module.css';
+
+// An index row: a linked label on the left, its meta on the right, hairline
+// between. `tags` renders a middot keyword line; `value` renders plain meta
+// (an address, a handle). One of the two, not both.
+export interface IndexItem {
+  label: string;
+  href?: string | undefined;
+  external?: boolean | undefined;
+  tags?: string[] | undefined;
+  value?: string | undefined;
+}
+interface Props {
+  items: IndexItem[];
+}
+const { items } = Astro.props;
+---
+<ul class={styles.list} role="list">
+  {items.map((item) => (
+    <li class={styles.row}>
+      <span class={styles.label}>
+        {item.href ? (
+          <a
+            href={item.href}
+            target={item.external ? '_blank' : undefined}
+            rel={item.external ? 'noopener noreferrer' : undefined}
+          >{item.label}</a>
+        ) : item.label}
+      </span>
+      {item.tags && item.tags.length > 0 ? (
+        <ul class={styles.tags} role="list">
+          {item.tags.map((t) => <li>{t}</li>)}
+        </ul>
+      ) : item.value ? (
+        <span class={styles.value}>{item.value}</span>
+      ) : null}
+    </li>
+  ))}
+</ul>

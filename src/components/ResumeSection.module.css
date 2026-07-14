@@ -1,0 +1,15 @@
+.section {
+  padding-block: var(--space-lg);
+}
+.body {
+  margin-top: var(--space-md);
+}
+@media print {
+  .section {
+    padding-block: var(--space-2xs) var(--space-xs);
+    /* allow sections to break across pages; break-inside on items prevents mid-entry splits */
+  }
+  .body {
+    margin-top: var(--space-3xs);
+  }
+}

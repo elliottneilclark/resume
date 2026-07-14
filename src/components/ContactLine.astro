@@ -1,0 +1,23 @@
+---
+import { cv } from '../data/cv';
+import styles from './ContactLine.module.css';
+
+const { email, phone, phonePlain, phoneHref, socials } = cv.contact;
+const stripScheme = (u: string) => u.replace(/^https?:\/\//, '');
+---
+{/* Both blocks render; the module's @media print CSS shows one and hides the other. */}
+<div class={styles.row}>
+  <a class={styles.item} href={`mailto:${email}`}>{email}</a>
+  <a class={styles.item} href={phoneHref}>{phone}</a>
+  {socials.map((s) => (
+    <a class={styles.item} href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>
+  ))}
+</div>
+<ul class={styles.printList}>
+  <li><span class={styles.printLabel}>Email:</span> {email}</li>
+  <li><span class={styles.printLabel}>Phone:</span> {phonePlain}</li>
+  <li><span class={styles.printLabel}>Web:</span> {stripScheme(cv.profile.website)}</li>
+  {socials.map((s) => (
+    <li><span class={styles.printLabel}>{s.name}:</span> {stripScheme(s.url)}</li>
+  ))}
+</ul>
