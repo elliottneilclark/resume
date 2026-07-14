@@ -1,15 +1,19 @@
-/* Whitespace, not hairlines, carries the rhythm here — calmer than dividers. */
+/* Whitespace, not hairlines, carries the rhythm here — calmer than dividers.
+   A two-column index: every name aligns in the left column, every keyword line
+   shares one left edge in the right column. Each entry spans both columns and
+   re-uses them via subgrid, so the alignment holds across rows and the meta
+   stays tied to its name on one baseline. */
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  row-gap: var(--space-md);
 }
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  column-gap: var(--space-md);
   align-items: baseline;
-  gap: var(--space-3xs) var(--space-md);
 }
 .label {
   font-family: var(--font-display);

@@ -207,7 +207,7 @@ export const cv: CV = {
   ],
   projects: [
     {
-      name: 'Heyya',
+      name: 'heyya',
       tagline:
         'A snapshot-testing library for Phoenix and LiveView components — catches rendered-markup regressions before they ship.',
       link: 'https://github.com/batteries-included/heyya',
@@ -242,7 +242,7 @@ export const cv: CV = {
       tags: ['Java', 'Key-Value Database', 'Distributed'],
     },
     {
-      name: 'Folly',
+      name: 'folly',
       tagline:
         "Facebook's base C++ library providing threading, locking, collections, metrics and other base components of observable performant C++ code.",
       link: 'https://github.com/facebook/folly',
