@@ -28,7 +28,7 @@ const links = [
   <div class="container">
     <Hero />
 
-    <nav class={styles.section} aria-labelledby="elsewhere-label">
+    <nav class:list={['reveal', styles.section]} style="--reveal-order: 3" aria-labelledby="elsewhere-label">
       <SectionMarker as="h2" id="elsewhere-label">Elsewhere</SectionMarker>
       <div class={styles.links}>
         {links.map((l) => (
@@ -42,7 +42,7 @@ const links = [
       </div>
     </nav>
 
-    <section class={styles.section} aria-labelledby="projects-label">
+    <section class:list={['reveal', styles.section]} style="--reveal-order: 4" aria-labelledby="projects-label">
       <SectionMarker as="h2" id="projects-label">Projects</SectionMarker>
       <div class={styles.body}><IndexList items={projectItems} /></div>
     </section>

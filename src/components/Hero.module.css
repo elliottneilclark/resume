@@ -53,25 +53,5 @@
   }
 }
 
-/* Quiet first-load reveal: a single orchestrated rise, masthead → bio → actions.
-   Scoped to no-preference so the default (and reduced-motion) state is fully
-   visible — the animation enhances, it never gates content. */
-@media (prefers-reduced-motion: no-preference) {
-  .masthead,
-  .about,
-  .actions {
-    animation: hero-rise 0.6s var(--ease-out) both;
-  }
-  .about {
-    animation-delay: 0.09s;
-  }
-  .actions {
-    animation-delay: 0.18s;
-  }
-  @keyframes hero-rise {
-    from {
-      opacity: 0;
-      transform: translateY(0.5rem);
-    }
-  }
-}
+/* First-load reveal lives in global.css (.reveal + --reveal-order), applied
+   deterministically across every page block in reading order. */
