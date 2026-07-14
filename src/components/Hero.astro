@@ -7,15 +7,15 @@ const { name, tagline, photo } = cv.profile;
 const about = cv.about;
 ---
 <section class={styles.hero}>
-  <div class={styles.masthead}>
+  <div class:list={['reveal', styles.masthead]} style="--reveal-order: 0">
     <div class={styles.identity}>
       <h1 class={styles.name}>{name}</h1>
       <p class={styles.tagline}>{tagline}</p>
     </div>
     <img class={styles.photo} src={photo} width="192" height="192" alt={`Portrait of ${name}`} loading="eager" />
   </div>
-  <p class={styles.about}>{about}</p>
-  <div class={styles.actions}>
+  <p class:list={['reveal', styles.about]} style="--reveal-order: 1">{about}</p>
+  <div class:list={['reveal', styles.actions]} style="--reveal-order: 2">
     <ArrowLink href="/resume">View full résumé</ArrowLink>
   </div>
 </section>

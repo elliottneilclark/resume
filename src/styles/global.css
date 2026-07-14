@@ -130,6 +130,20 @@
   }
 }
 
+/* First-load reveal: one orchestrated rise, staggered top-to-bottom by
+   --reveal-order (0,1,2,… in reading order). Content is fully visible without
+   this — the reduced-motion block below neutralizes it. */
+.reveal {
+  animation: page-rise 0.6s var(--ease-out) both;
+  animation-delay: calc(var(--reveal-order, 0) * 0.1s);
+}
+@keyframes page-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
