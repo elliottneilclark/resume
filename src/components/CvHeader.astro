@@ -1,0 +1,19 @@
+---
+import { cv } from '../data/cv';
+import ContactLine from './ContactLine.astro';
+import styles from './CvHeader.module.css';
+
+const { name, tagline, location, photo } = cv.profile;
+---
+<header class={styles.header}>
+  <div>
+    <h1 class={styles.name}>{name}</h1>
+    <p class={styles.tagline}>{tagline}</p>
+    <p class={styles.location}>{location}</p>
+    <div class={styles.contact}>
+      <ContactLine />
+    </div>
+  </div>
+  <img class={styles.photo} src={photo} width="136" height="136"
+       alt={`Portrait of ${name}`} loading="eager" />
+</header>

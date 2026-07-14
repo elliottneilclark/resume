@@ -1,0 +1,69 @@
+.item {
+  padding-block: var(--space-md) 0;
+}
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2xs) var(--space-md);
+}
+.company {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 420;
+}
+.dates {
+  font-size: var(--text-small);
+  color: var(--c-stone);
+  white-space: nowrap;
+}
+/* The job title is primary content, not metadata. Size + weight lift it out of
+   the dates/tags tier; the soft ink keeps it a clear notch below the company. */
+.role {
+  margin-top: var(--space-3xs);
+  font-size: var(--text-body);
+  font-weight: 500;
+  color: var(--c-ink-soft);
+}
+.bullets {
+  margin-top: var(--space-sm);
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+.bullets li {
+  line-height: 1.5;
+}
+/* Centered, spaced row — a distinct band, not another left-aligned list. */
+.tags {
+  margin-top: var(--space-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2xs) var(--space-sm);
+  font-size: var(--text-small);
+  color: var(--c-stone);
+}
+@media print {
+  .item {
+    padding-top: var(--space-2xs);
+    break-inside: avoid;
+  }
+  .company {
+    font-size: 10.5pt;
+  }
+  .role {
+    margin-top: 0.05rem;
+  }
+  .bullets {
+    margin-top: 0.15rem;
+    gap: 0.08rem;
+  }
+  .tags {
+    font-size: 7pt;
+    margin-top: 0.1rem;
+    color: #666666;
+  }
+}

@@ -1,0 +1,57 @@
+[tools]
+node = "latest"
+# pnpm provisioned via mise so its version is pinned in mise.lock.
+"npm:pnpm" = "latest"
+
+[settings]
+experimental = true
+
+[env]
+# Resolve bare `astro` / `biome` in tasks to the project's pinned devDeps.
+_.path = ['{{config_root}}/node_modules/.bin']
+
+[tasks.pnpm-install]
+description = 'Install dependencies with pnpm'
+run = 'pnpm install'
+sources = ['package.json', 'pnpm-lock.yaml', 'mise.toml']
+outputs = ['node_modules/.pnpm/lock.yaml']
+
+[tasks.dev]
+description = 'Start the Astro dev server'
+depends = ['pnpm-install']
+run = 'astro dev'
+
+[tasks.build]
+description = 'Build the static site to dist/'
+depends = ['pnpm-install']
+run = 'astro build'
+
+[tasks.preview]
+description = 'Serve the built site from dist/ locally'
+depends = ['build']
+run = 'astro preview'
+
+[tasks.check]
+description = 'Run every check (Biome + astro check)'
+depends = ['check:biome', 'check:astro']
+run = "echo 'mise check: ALL CHECKS PASSED'"
+
+[tasks."check:biome"]
+description = 'Lint + format-check with Biome (no writes)'
+depends = ['pnpm-install']
+run = 'biome check'
+
+[tasks."check:astro"]
+description = 'Type-check .astro and TypeScript with astro check'
+depends = ['pnpm-install']
+run = 'astro check --minimumFailingSeverity hint'
+
+[tasks.fix]
+description = 'Apply every auto-fix (Biome format + safe lint fixes)'
+depends = ['fix:biome']
+run = "echo 'mise fix: done'"
+
+[tasks."fix:biome"]
+description = 'Format and apply safe Biome fixes (writes files)'
+depends = ['pnpm-install']
+run = 'biome check --write'

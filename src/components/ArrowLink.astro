@@ -1,0 +1,10 @@
+---
+import styles from './ArrowLink.module.css';
+
+interface Props {
+  href: string;
+}
+const { href } = Astro.props;
+---
+<a class={styles.arrowLink} href={href}
+><slot /><span class={styles.arrow} aria-hidden="true">&rarr;</span></a>

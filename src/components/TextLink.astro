@@ -1,0 +1,16 @@
+---
+import styles from './TextLink.module.css';
+
+interface Props {
+  href: string;
+}
+const { href } = Astro.props;
+// External links open in a new tab with rel, matching the rest of the site.
+const external = /^https?:\/\//.test(href);
+---
+<a
+  class={styles.textLink}
+  href={href}
+  target={external ? '_blank' : undefined}
+  rel={external ? 'noopener noreferrer' : undefined}
+><slot /></a>

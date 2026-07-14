@@ -1,0 +1,17 @@
+.arrowLink {
+  color: var(--c-accent);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4em;
+  white-space: nowrap;
+}
+.arrow {
+  transition: transform var(--dur) var(--ease-out);
+}
+.arrowLink:hover {
+  color: var(--c-accent-deep);
+}
+.arrowLink:hover .arrow {
+  transform: translateX(0.25em);
+}

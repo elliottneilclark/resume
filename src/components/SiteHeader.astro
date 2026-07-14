@@ -1,0 +1,26 @@
+---
+import { site } from '../site';
+import styles from './SiteHeader.module.css';
+import Wordmark from './Wordmark.astro';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+function isActive(href: string) {
+  const clean = href.replace(/\/$/, '');
+  if (!clean) return path === '/';
+  return path === clean || path.startsWith(`${clean}/`);
+}
+---
+<header class={`${styles.header} screen-only`}>
+  <div class={`container ${styles.inner}`}>
+    <Wordmark />
+    <nav class={styles.nav} aria-label="Primary">
+      {site.nav.map((item) => (
+        <a
+          href={item.href}
+          aria-current={isActive(item.href) ? 'page' : undefined}
+          class:list={[styles.link, { [styles.isActive as string]: isActive(item.href) }]}
+        >{item.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

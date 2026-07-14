@@ -1,0 +1,29 @@
+.about {
+  color: var(--c-ink-soft);
+  line-height: 1.6;
+}
+/* Two-column grid: denser than the single-column experience flow, and a quiet
+   structural shift that reads as "a set of things" rather than a career timeline.
+   Column rule is a hairline, not a box. Collapses to one column on narrow screens. */
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-xl);
+  row-gap: var(--space-xs);
+}
+@media (max-width: 34rem) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .projectGrid {
+    column-gap: var(--space-lg);
+    row-gap: 0;
+  }
+}
+.pdfTip {
+  margin-top: var(--space-lg);
+  font-size: var(--text-small);
+  color: var(--c-stone);
+}

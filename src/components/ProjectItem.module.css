@@ -1,0 +1,62 @@
+.item {
+  padding-block: var(--space-sm);
+}
+.name {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  font-weight: 500;
+}
+.name a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in oklab, currentColor 28%, transparent);
+  transition:
+    text-decoration-color var(--dur) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+.name a:hover {
+  color: var(--c-accent);
+  text-decoration-color: var(--c-accent);
+}
+.tagline {
+  margin-top: var(--space-3xs);
+  font-size: var(--text-small);
+  color: var(--c-ink-soft);
+  line-height: 1.45;
+}
+/* Middot-separated keyword line, centered in its grid column — the same meta
+   tier and centered rhythm as the experience tag band. */
+.tags {
+  margin-top: var(--space-2xs);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 var(--space-2xs);
+  font-size: var(--text-small);
+  color: var(--c-stone);
+}
+.tags li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2xs);
+}
+.tags li:not(:last-child)::after {
+  content: '·';
+  color: var(--c-hair);
+}
+@media print {
+  .item {
+    padding-block: var(--space-2xs);
+    break-inside: avoid;
+  }
+  .tags {
+    margin-top: 0.1rem;
+    font-size: 7pt;
+    color: #666666;
+  }
+  .tags li:not(:last-child)::after {
+    color: #bbbbbb;
+  }
+}

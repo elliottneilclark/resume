@@ -1,0 +1,77 @@
+.hero {
+  /* Sections follow now, so the bottom pad is lighter than a standalone hero. */
+  padding-block: var(--space-2xl) var(--space-md);
+}
+/* Identity band: name + tagline sit beside the portrait. The two blocks are
+   close in height, so centering balances instead of letting the photo float
+   against the middle of a long bio (which is what a single tall column did). */
+.masthead {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-xl);
+  align-items: center;
+}
+.name {
+  font-family: var(--font-display);
+  font-weight: 320;
+  font-size: var(--text-display);
+  line-height: 1.02;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+.tagline {
+  margin-top: var(--space-sm);
+  font-size: var(--text-lede);
+  color: var(--c-ink-soft);
+  max-width: 32ch;
+  text-wrap: balance;
+}
+.about {
+  margin-top: var(--space-lg);
+  max-width: var(--measure);
+  line-height: 1.6;
+  color: var(--c-ink-soft);
+}
+.actions {
+  margin-top: var(--space-lg);
+}
+.photo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 46rem) {
+  .masthead {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  .photo {
+    width: 8rem;
+    height: 8rem;
+    order: -1;
+  }
+}
+
+/* Quiet first-load reveal: a single orchestrated rise, masthead → bio → actions.
+   Scoped to no-preference so the default (and reduced-motion) state is fully
+   visible — the animation enhances, it never gates content. */
+@media (prefers-reduced-motion: no-preference) {
+  .masthead,
+  .about,
+  .actions {
+    animation: hero-rise 0.6s var(--ease-out) both;
+  }
+  .about {
+    animation-delay: 0.09s;
+  }
+  .actions {
+    animation-delay: 0.18s;
+  }
+  @keyframes hero-rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.5rem);
+    }
+  }
+}
