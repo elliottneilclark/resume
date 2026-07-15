@@ -4,7 +4,7 @@ import EducationItem from '../components/EducationItem.astro';
 import ExperienceItem from '../components/ExperienceItem.astro';
 import ProjectItem from '../components/ProjectItem.astro';
 import ResumeSection from '../components/ResumeSection.astro';
-import { cv } from '../data/cv';
+import { cv, skills } from '../data/cv';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import styles from './resume.module.css';
 ---
@@ -14,6 +14,15 @@ import styles from './resume.module.css';
 
     <ResumeSection title="About" id="about">
       <p class={styles.about}>{cv.about}</p>
+    </ResumeSection>
+
+    <ResumeSection title="Skills" id="skills">
+      <ul class={styles.skillTags} role="list">
+        {skills.hard.map((s) => <li>{s}</li>)}
+      </ul>
+      <ul class={styles.skillTags} role="list">
+        {skills.soft.map((s) => <li>{s}</li>)}
+      </ul>
     </ResumeSection>
 
     <ResumeSection title="Experience" id="experience">

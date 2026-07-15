@@ -11,7 +11,8 @@ export interface Work {
   start: string;
   end: string | null;
   achievements: string[];
-  tags?: string[];
+  softTags?: string[];
+  hardTags?: string[];
 }
 export interface Education {
   school: string;
@@ -74,7 +75,7 @@ export const cv: CV = {
     ],
   },
   about:
-    "I build dependable, ML-powered distributed systems end to end — and I have built the team and company around them. As sole founder of Batteries Included I ran the pre-revenue investor round successfully and shipped a self-driving cloud platform that stood up and operated the full hyperscaler stack — Kubernetes, databases, service mesh, and LLM serving — on anyone's hardware from a single button press. Before that I was the senior tech lead for Ads Foundation at Facebook, responsible for the stability, performance, and correctness of the ads infrastructure behind a business used by billions of people. And before that I was a tech lead on some of the largest OLTP key-value stores in the world. I care about correctness, latency, and AI/ML systems that hold up in production, and I am looking to lead teams tackling hard, high-impact problems with modern tooling.",
+    "I build dependable, ML-powered distributed systems end to end — and the teams and companies around them. As sole founder of Batteries Included I raised the pre-revenue round and shipped a self-driving cloud platform that stood up the full hyperscaler stack — Kubernetes, databases, service mesh, and LLM serving — on anyone's hardware from a single button press. At Facebook I led Ads Foundation as senior tech lead. The ads infrastructure behind billions of people stayed stable, fast, and correct because that was my job. Before that I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I am looking to lead teams tackling hard, high-impact problems with modern tooling.",
   work: [
     {
       company: 'Batteries Included',
@@ -82,19 +83,26 @@ export const cv: CV = {
       start: '2021',
       end: '2026',
       achievements: [
-        'Founded Batteries Included as sole founder — incorporated the company and started the build alone, then raised a $1.2M seed from Race Capital through persistent solo VC outreach, funding a full cross-functional team.',
-        'Led our team in building a self-driving cloud platform that stood up and operated the full production stack from a single button press — provisioning Kubernetes on your own hardware or any cloud, then automatically integrating, configuring, tuning, upgrading, and self-healing every pluggable service with zero hand-written YAML, from databases and service mesh to LLM/ML serving.',
-        'Ran the company end to end beyond the code — led marketing and go-to-market, drove customer research and discovery, owned project planning and delivery across the team, and managed investor relations from seed pitch through ongoing reporting.',
+        'Founded Batteries Included, incorporated the company, and raised a $1.2M seed from Race Capital to fund a cross-functional team.',
+        'Built the team from one to seven — recruiting, onboarding, sprint planning — into a fast-paced group shipping beautiful, easy to use, open source software.',
+        'Led the creation of a self-driving cloud platform that launches Kubernetes, vector databases, serverless web, and LLM inference with a single button press.',
+        'Ran the company beyond the code — marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
       ],
-      tags: [
+      softTags: [
         'Fundraising',
         'Team building',
         'SaaS Marketing',
+        'Sprint Planning',
+        'Customer Outreach',
+      ],
+      hardTags: [
         'Elixir',
-        'AI/ML',
+        'AI',
+        'ML',
         'LLM Inference',
         'Kubernetes',
-        'Serverless',
+        'AWS',
+        'Docker',
       ],
     },
     {
@@ -103,21 +111,23 @@ export const cv: CV = {
       start: '2014',
       end: '2021',
       achievements: [
-        'Responsible for all of Ads infrastructure stability, performance, correctness, and disaster preparedness.',
-        'Coordinated incident responses and helped solve the toughest production stability events for Ads.',
-        'Created automatic A/B statistical testing of the most critical machine learning ads targeting and bidding systems.',
-        'Pioneered innovative production traffic guided fuzzing, to ensure the safety and stability of the most revenue critical code.',
-        "Designed and led the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
+        'Owned stability, performance, correctness, scalability, and disaster readiness for all of Ads infrastructure.',
+        'Directed incident response for critical Ads outages, achieving root-cause resolution within SLA.',
+        'Created automatic A/B statistical testing, and automated CI/CD of the most critical machine learning ads targeting and bidding systems.',
+        'Introduced a novel automated traffic-guided fuzzing test for revenue-critical microservices, reducing runtime crashing by up to 90% and increasing revenue, ML/AI capacity, and reliability.',
+        "Designed and drove the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
         'Migrated all of Messenger to use open source HBase, improving performance and security while giving back to the world.',
       ],
-      tags: [
-        'Tech Lead',
+      softTags: ['Tech Lead', 'Mentoring'],
+      hardTags: [
         'C++',
         'Machine Learning',
         'Fuzz Testing',
-        'HBase/Hadoop',
-        'Linux/Containers',
-        'Continuous Deployment',
+        'HBase',
+        'Hadoop',
+        'Linux',
+        'Containers',
+        'CI/CD',
       ],
     },
     {
@@ -131,7 +141,8 @@ export const cv: CV = {
         'Created a new compaction algorithm that has 10x better hardware utilization.',
         'Created new UI for HBase Master and Regionserver daemons increasing adoption of HBase.',
       ],
-      tags: ['HBase', 'Hadoop/HDFS', 'Java', 'Distributed Tracing'],
+      softTags: ['Customer Outreach'],
+      hardTags: ['HBase', 'Hadoop/HDFS', 'Java', 'Distributed Tracing'],
     },
     {
       company: 'StumbleUpon',
@@ -141,9 +152,9 @@ export const cv: CV = {
       achievements: [
         'Became an Apache HBase committer.',
         'Deployed new versions of HBase to production clusters with no downtime, fixing issues and improving data store performance.',
-        'Created new Stochastic Load Balancer that takes into consideration data locality, request throughput, and data sizes to better utilize server resources.',
+        'Created new Stochastic Load Balancer that optimizes data locality, request throughput, and data sizes to better utilize server resources.',
       ],
-      tags: ['HBase', 'Java', 'Load Balancing'],
+      hardTags: ['HBase', 'Java', 'Load Balancing'],
     },
     {
       company: 'ngmoco;)',
@@ -157,7 +168,8 @@ export const cv: CV = {
         "Built software to start, stop, and add to Hadoop/HBase/Zookeeper clusters on Amazon's EC2 allowing the group to rapidly adopt Hadoop and HBase.",
         'Designed and implemented JavaScript UI to display tens of thousands of data points per day per game in a discoverable HTML interface.',
       ],
-      tags: ['Scala', 'Akka', 'Hadoop', 'HBase', 'JavaScript', 'Mentoring'],
+      softTags: ['Mentoring','Tech Lead'],
+      hardTags: ['AWS', 'Scala', 'Akka', 'Hadoop', 'HBase', 'JavaScript'],
     },
     {
       company: '316 Ventures',
@@ -169,7 +181,7 @@ export const cv: CV = {
         'Implemented real-time and background content scraping systems to process and display pricing data from external web sources.',
         'Halved page load time by optimizing database access, creating automatic asset minification scripts, configuring caching, and other web development best practices.',
       ],
-      tags: ['Full-stack', 'Rails', 'Web Scraping', 'Performance'],
+      hardTags: ['Full-stack', 'Rails', 'Web Scraping', 'Performance'],
     },
     {
       company: 'Microsoft',
@@ -181,10 +193,10 @@ export const cv: CV = {
         'Corrected blocking bugs in WPF to enable Blend and Visual Studio to adopt Windows Presentation Framework.',
         'Received a level promotion in the first year.',
         'Created a hot-fix for a high priority bug in libraries of .NET, enabling Windows customers to type diacritics.',
-        'Led the effort to create a .NET WPF implementation of Microsoft Ribbon; implemented the custom window code to allow integration into the title bar.',
+        'Spearheaded the effort to create a .NET WPF implementation of Microsoft Ribbon; implemented the custom window code to allow integration into the title bar.',
         'Drove customer adoption of WPF solutions by answering questions on MSDN Forums and Codeplex.com.',
       ],
-      tags: ['C#/.NET', 'C++', 'WPF'],
+      hardTags: ['C#', '.NET', 'C++', 'WPF'],
     },
     {
       company: 'Microsoft',
@@ -196,7 +208,7 @@ export const cv: CV = {
         'Collaborated with multiple teams to implement new streams of revenue.',
         'Developed XML tools to deliver MSDN Magazine online using the WPF News Reader SDK.',
       ],
-      tags: ['C#/.NET', 'WPF', 'XML'],
+      hardTags: ['C#', '.NET', 'WPF', 'XML'],
     },
   ],
   education: [
@@ -218,7 +230,7 @@ export const cv: CV = {
       tagline:
         "A Rust library for poker: fast hand evaluation, range parsing, and Texas Hold'em game logic.",
       link: 'https://github.com/elliottneilclark/rs-poker',
-      tags: ['Rust', 'RL Arena', 'Poker', 'Bit Manipulation'],
+      tags: ['Rust', 'RL Arena', 'Performance'],
     },
     {
       name: 'little-sorry',
@@ -232,7 +244,7 @@ export const cv: CV = {
       tagline:
         "A GPT-style model that uses masked game sequence patterns to predict an opponent's hidden hole cards, using factored embeddings and suit-permutation symmetry.",
       link: 'https://github.com/Otter-Crew/range-reader',
-      tags: ['PyTorch', 'Transformers', 'Poker', 'Hidden Information'],
+      tags: ['PyTorch', 'Transformers', 'AI', 'ML'],
     },
     {
       name: 'HBase',
@@ -249,4 +261,26 @@ export const cv: CV = {
       tags: ['C++', 'Concurrency', 'Correctness'],
     },
   ],
+};
+
+// Skills section = the set of all work tags, ordered by how often each
+// appears across roles. Derived, so the per-role tags stay the single source.
+function byFrequency(lists: (string[] | undefined)[]): string[] {
+  const counts = new Map<string, number>();
+  for (const list of lists) {
+    for (const t of list ?? []) {
+      counts.set(t, (counts.get(t) ?? 0) + 1);
+    }
+  }
+  return [...counts.keys()].sort(
+    (a, b) => (counts.get(b) ?? 0) - (counts.get(a) ?? 0),
+  );
+}
+export const skills = {
+  // Project tags are all hard skills, so they feed the hard list directly.
+  hard: byFrequency([
+    ...cv.work.map((w) => w.hardTags),
+    ...cv.projects.map((p) => p.tags),
+  ]),
+  soft: byFrequency(cv.work.map((w) => w.softTags)),
 };

@@ -7,6 +7,7 @@ interface Props {
 }
 const { work } = Astro.props;
 const dates = `${work.start} – ${work.end ?? 'Present'}`;
+const tags = [...(work.softTags ?? []), ...(work.hardTags ?? [])];
 ---
 <article class={styles.item}>
   <div class={styles.head}>
@@ -17,9 +18,9 @@ const dates = `${work.start} – ${work.end ?? 'Present'}`;
   <ul class={styles.bullets} role="list">
     {work.achievements.map((a) => <li>{a}</li>)}
   </ul>
-  {work.tags && work.tags.length > 0 && (
+  {tags.length > 0 && (
     <ul class={styles.tags} role="list">
-      {work.tags.map((t) => <li>{t}</li>)}
+      {tags.map((t) => <li>{t}</li>)}
     </ul>
   )}
 </article>
