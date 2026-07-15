@@ -75,7 +75,7 @@ export const cv: CV = {
     ],
   },
   about:
-    "I build distributed systems and ML infrastructure end to end - and the teams and companies around them. As sole founder of Batteries Included I raised the pre-revenue round and shipped a self-driving cloud platform: Kubernetes orchestration, vector databases, service mesh, and LLM inference serving on anyone's hardware from a single button press. At Facebook I was a senior tech lead of Ads Foundation, keeping the ML-driven ads infrastructure behind billions of people stable, fast, and correct. Before that I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
+    "I build distributed systems and ML infrastructure end to end, along with the teams and companies around them. As the sole founder of Batteries Included, I raised a pre-revenue round and shipped a self-driving cloud platform: Kubernetes orchestration, vector databases, service mesh, and LLM inference serving on anyone's hardware with a single button press. At Facebook, I was a senior tech lead on the Ads Foundation, keeping the ML-driven ads infrastructure serving billions of people stable, fast, and correct. Before that, I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
   work: [
     {
       company: 'Batteries Included',
@@ -84,9 +84,9 @@ export const cv: CV = {
       end: '2026',
       achievements: [
         'Founded Batteries Included, incorporated the company, and raised a $1.2M seed from Race Capital to fund a cross-functional team.',
-        'Built the team from one to seven - recruiting, onboarding, sprint planning - into a fast-paced group shipping beautiful, easy to use, open source software.',
+        'Built the team from one to seven, recruiting, onboarding, and sprint planning, into a fast-paced group shipping beautiful, easy-to-use, open-source software.',
         'Led the creation of a self-driving cloud platform that launches Kubernetes, vector databases, serverless web, and LLM inference with a single button press.',
-        'Ran the company beyond the code - marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
+        'Ran the company beyond the code: marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
       ],
       softTags: [
         'Fundraising',
@@ -115,8 +115,8 @@ export const cv: CV = {
       achievements: [
         'Owned stability, performance, correctness, scalability, and disaster readiness for all of Ads infrastructure.',
         'Directed incident response for critical Ads outages, achieving root-cause resolution within SLA.',
-        'Created automatic A/B statistical testing, and automated CI/CD of the most critical machine learning ads targeting and bidding systems.',
-        'Introduced a novel automated traffic-guided fuzzing test for revenue-critical microservices, reducing runtime crashing by up to 90% and increasing revenue, ML/AI capacity, and reliability.',
+        'Created automatic A/B statistical testing and automated CI/CD of the most critical machine learning ads targeting and bidding systems.',
+        'Introduced a novel automated traffic-guided fuzzing test for revenue-critical microservices, reducing runtime crashes by up to 90% and increasing revenue, ML/AI capacity, and reliability.',
         "Designed and drove the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
         'Migrated all of Messenger to use open source HBase, improving performance and security while giving back to the world.',
       ],
