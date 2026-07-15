@@ -1,4 +1,4 @@
-/* Whitespace, not hairlines, carries the rhythm here — calmer than dividers.
+/* Whitespace, not hairlines, carries the rhythm here - calmer than dividers.
    A two-column index: every name aligns in the left column, every keyword line
    shares one left edge in the right column. Each entry spans both columns and
    re-uses them via subgrid, so the alignment holds across rows and the meta
@@ -34,7 +34,7 @@
   color: var(--c-accent);
   text-decoration-color: var(--c-accent);
 }
-/* Middot keyword line — same meta tier and separator as the résumé tag bands. */
+/* Middot keyword line - same meta tier and separator as the resume tag bands. */
 .tags {
   display: flex;
   flex-wrap: wrap;

@@ -10,7 +10,7 @@
   --c-ink-soft: oklch(40% 0.015 62); /* softened ink for secondary headings */
   --c-stone: oklch(
     48% 0.016 64
-  ); /* muted warm gray: meta, captions. L48 → 6.07:1 on cream (AA + margin) */
+  ); /* muted warm gray: meta, captions. L48 -> 6.07:1 on cream (AA + margin) */
   --c-hair: oklch(89% 0.014 80); /* hairline dividers and borders */
   --c-accent: oklch(58% 0.118 56); /* burnt amber / ochre, the lone accent */
   --c-accent-deep: oklch(49% 0.112 52); /* accent on hover / press */
@@ -34,7 +34,7 @@
   ); /* fluid like h2 so entry titles don't converge on the company line at mobile */
   --text-lede: clamp(1.15rem, 1.05rem + 0.55vw, 1.4rem);
   --text-body: 1.0625rem;
-  --text-small: 0.875rem; /* 14px — one clear step below body (1.21×), the meta tier: dates, tags, captions */
+  --text-small: 0.875rem; /* 14px - one clear step below body (1.21x), the meta tier: dates, tags, captions */
   --text-label: 0.75rem;
 
   /* ---- Chrome type: wordmark, off the prose scale ---- */
@@ -54,7 +54,7 @@
 
   /* ---- Layout widths ---- */
   --w-content: 50rem;
-  --measure: 60ch; /* reading measure for the bio: ~72 chars/line in Public Sans, mid of the 65–75ch comfort band */
+  --measure: 60ch; /* reading measure for the bio: ~72 chars/line in Public Sans, mid of the 65-75ch comfort band */
   --gutter: clamp(1.25rem, 5vw, 4rem);
 
   /* ---- Radius (restrained) ---- */

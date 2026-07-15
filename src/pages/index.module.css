@@ -1,8 +1,8 @@
-/* Landing-only layout. Shares the résumé's section header (SectionMarker: amber
+/* Landing-only layout. Shares the resume's section header (SectionMarker: amber
    title + hairline rule) so both pages read as one system. Links stay a plain
    inline row, distinct from the Projects index below. */
 
-/* Elsewhere: a calm inline row of channels — deliberately NOT the index-row
+/* Elsewhere: a calm inline row of channels - deliberately NOT the index-row
    pattern the Projects list uses. Same quiet link treatment as the CV contact
    line: ink-soft, amber only on hover. */
 .links {
@@ -30,7 +30,7 @@
 .section {
   margin-top: var(--space-xl);
 }
-/* Gap from the section header to its content — matches the résumé's body gap. */
+/* Gap from the section header to its content - matches the resume's body gap. */
 .body {
   margin-top: var(--space-md);
 }

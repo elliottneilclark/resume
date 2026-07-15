@@ -6,7 +6,7 @@ interface Props {
   work: Work;
 }
 const { work } = Astro.props;
-const dates = `${work.start} – ${work.end ?? 'Present'}`;
+const dates = `${work.start} - ${work.end ?? 'Present'}`;
 const tags = [...(work.softTags ?? []), ...(work.hardTags ?? [])];
 ---
 <article class={styles.item}>

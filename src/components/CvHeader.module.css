@@ -41,7 +41,7 @@
 @media print {
   .header {
     padding-block: 0 var(--space-xs);
-    /* single-column in print — photo is hidden, saves vertical space */
+    /* single-column in print - photo is hidden, saves vertical space */
     grid-template-columns: 1fr;
   }
   .photo {
