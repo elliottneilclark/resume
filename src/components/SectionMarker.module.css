@@ -1,5 +1,5 @@
 /* Inline rule: the title carries the section, and a hairline continues past it
-   to fill the row — the header IS the divider now (the old section border-top
+   to fill the row - the header IS the divider now (the old section border-top
    is gone). Amber ties it to the accent freed up from the footer email. */
 .marker {
   display: flex;

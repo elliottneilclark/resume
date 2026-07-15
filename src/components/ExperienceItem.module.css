@@ -36,7 +36,7 @@
 .bullets li {
   line-height: 1.5;
 }
-/* Centered, spaced row — a distinct band, not another left-aligned list. */
+/* Centered, spaced row - a distinct band, not another left-aligned list. */
 .tags {
   margin-top: var(--space-sm);
   display: flex;

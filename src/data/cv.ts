@@ -1,6 +1,6 @@
-// Single source of truth for all résumé content. Pages/components read this;
+// Single source of truth for all resume content. Pages/components read this;
 // markup holds no copy. Draft copy (summary, wind-down wording) is marked and
-// awaits Elliott's confirmation — see spec §9.
+// awaits Elliott's confirmation - see spec section 9.
 export interface Social {
   name: string;
   url: string;
@@ -37,7 +37,7 @@ export interface CV {
     phone: string; // display form (vanity) for screen
     phonePlain: string; // numeric form for print, where there's no tel: link to tap
     phoneHref: string;
-    consulting: string; // Otter Crew fractional/advisory offer — secondary CTA
+    consulting: string; // Otter Crew fractional/advisory offer - secondary CTA
     writing: string; // Otter Crew blog
     socials: Social[];
   };
@@ -51,7 +51,7 @@ export const cv: CV = {
   profile: {
     name: 'Elliott Clark',
     tagline:
-      'Software engineer & founder — dependable, ML-powered distributed systems.',
+      'Software engineer & founder - dependable, ML-powered distributed systems.',
     location: 'Franklin, TN',
     photo: '/images/photo.jpg',
     website: 'https://elliottclark.info',
@@ -75,7 +75,7 @@ export const cv: CV = {
     ],
   },
   about:
-    "I build dependable, ML-powered distributed systems end to end — and the teams and companies around them. As sole founder of Batteries Included I raised the pre-revenue round and shipped a self-driving cloud platform that stood up the full hyperscaler stack — Kubernetes, databases, service mesh, and LLM serving — on anyone's hardware from a single button press. At Facebook I led Ads Foundation as senior tech lead. The ads infrastructure behind billions of people stayed stable, fast, and correct because that was my job. Before that I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I am looking to lead teams tackling hard, high-impact problems with modern tooling.",
+    "I build distributed systems and ML infrastructure end to end - and the teams and companies around them. As sole founder of Batteries Included I raised the pre-revenue round and shipped a self-driving cloud platform: Kubernetes orchestration, vector databases, service mesh, and LLM inference serving on anyone's hardware from a single button press. At Facebook I was a senior tech lead of Ads Foundation, keeping the ML-driven ads infrastructure behind billions of people stable, fast, and correct. Before that I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
   work: [
     {
       company: 'Batteries Included',
@@ -84,9 +84,9 @@ export const cv: CV = {
       end: '2026',
       achievements: [
         'Founded Batteries Included, incorporated the company, and raised a $1.2M seed from Race Capital to fund a cross-functional team.',
-        'Built the team from one to seven — recruiting, onboarding, sprint planning — into a fast-paced group shipping beautiful, easy to use, open source software.',
+        'Built the team from one to seven - recruiting, onboarding, sprint planning - into a fast-paced group shipping beautiful, easy to use, open source software.',
         'Led the creation of a self-driving cloud platform that launches Kubernetes, vector databases, serverless web, and LLM inference with a single button press.',
-        'Ran the company beyond the code — marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
+        'Ran the company beyond the code - marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
       ],
       softTags: [
         'Fundraising',
@@ -101,6 +101,8 @@ export const cv: CV = {
         'ML',
         'LLM Inference',
         'Kubernetes',
+        'Grafana',
+        'VictoriaMetrics',
         'AWS',
         'Docker',
       ],
@@ -142,7 +144,7 @@ export const cv: CV = {
         'Created new UI for HBase Master and Regionserver daemons increasing adoption of HBase.',
       ],
       softTags: ['Customer Outreach'],
-      hardTags: ['HBase', 'Hadoop/HDFS', 'Java', 'Distributed Tracing'],
+      hardTags: ['HBase', 'Hadoop','HDFS', 'HBase', 'Java', 'Distributed Tracing'],
     },
     {
       company: 'StumbleUpon',
@@ -221,7 +223,7 @@ export const cv: CV = {
     {
       name: 'heyya',
       tagline:
-        'A snapshot-testing library for Phoenix and LiveView components — catches rendered-markup regressions before they ship.',
+        'A snapshot-testing library for Phoenix and LiveView components - catches rendered-markup regressions before they ship.',
       link: 'https://github.com/batteries-included/heyya',
       tags: ['Elixir', 'Phoenix', 'Testing'],
     },
@@ -235,7 +237,7 @@ export const cv: CV = {
     {
       name: 'little-sorry',
       tagline:
-        'A Rust library for counterfactual regret minimization — CFR+, DCFR, and predictive variants with zero-allocation solves.',
+        'A Rust library for counterfactual regret minimization - CFR+, DCFR, and predictive variants with zero-allocation solves.',
       link: 'https://github.com/elliottneilclark/little-sorry',
       tags: ['Rust', 'Linear Algebra', 'Quantization'],
     },

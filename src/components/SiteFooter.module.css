@@ -11,7 +11,7 @@
   justify-content: space-between;
 }
 /* Same treatment as the emails in the CV header (ContactLine .item): quiet
-   ink-soft link, amber only on hover — so amber reads as the header color,
+   ink-soft link, amber only on hover - so amber reads as the header color,
    not a footer accent. */
 .email {
   color: var(--c-ink-soft);

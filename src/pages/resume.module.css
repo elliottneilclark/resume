@@ -23,7 +23,7 @@
   }
 }
 /* Skills mirror the per-job tag bands: centered, spaced rows in the same
-   small stone tier — hard skills first, soft below. */
+   small stone tier - hard skills first, soft below. */
 .skillTags {
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   font-size: var(--text-small);
   color: var(--c-stone);
 }
-.skillTags + .skillTags {
+.about + .skillTags {
   margin-top: var(--space-md);
 }
 @media print {
@@ -40,7 +40,7 @@
     font-size: 7pt;
     color: #666666;
   }
-  .skillTags + .skillTags {
+  .about + .skillTags {
     margin-top: 0.35rem;
   }
 }

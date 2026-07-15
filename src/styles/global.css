@@ -131,8 +131,8 @@
 }
 
 /* First-load reveal: one orchestrated rise, staggered top-to-bottom by
-   --reveal-order (0,1,2,… in reading order). Content is fully visible without
-   this — the reduced-motion block below neutralizes it. */
+   --reveal-order (0,1,2,... in reading order). Content is fully visible without
+   this - the reduced-motion block below neutralizes it. */
 .reveal {
   animation: page-rise 0.6s var(--ease-out) both;
   animation-delay: calc(var(--reveal-order, 0) * 0.1s);
@@ -158,15 +158,15 @@
 }
 
 /* --------------------------------------------------------- print / PDF
-   First-class deliverable (spec §7): /resume must save to PDF as a clean,
-   recruiter-ready one-page résumé. White page (no cream ink wash), tightened
+   First-class deliverable (spec section 7): /resume must save to PDF as a clean,
+   recruiter-ready one-page resume. White page (no cream ink wash), tightened
    spacing, no chrome, plain-text contact URLs, no mid-entry page breaks. */
 @media print {
   @page {
     margin: 0.5in;
   }
   :root {
-    /* white page — no cream ink wash */
+    /* white page - no cream ink wash */
     --c-bg: #ffffff;
     /* @page already supplies the page margin; drop the screen gutter so the
        container spans the full content box instead of compounding margins. */

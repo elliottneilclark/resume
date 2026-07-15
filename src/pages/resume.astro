@@ -8,20 +8,20 @@ import { cv, skills } from '../data/cv';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import styles from './resume.module.css';
 ---
-<BaseLayout title="Résumé" image={cv.profile.photo}>
+<BaseLayout title="Resume" image={cv.profile.photo}>
   <div class="container">
     <CvHeader />
 
     <ResumeSection title="About" id="about">
       <p class={styles.about}>{cv.about}</p>
+      <ul class={styles.skillTags} role="list">
+        {skills.soft.map((s) => <li>{s}</li>)}
+      </ul>
     </ResumeSection>
 
     <ResumeSection title="Skills" id="skills">
       <ul class={styles.skillTags} role="list">
         {skills.hard.map((s) => <li>{s}</li>)}
-      </ul>
-      <ul class={styles.skillTags} role="list">
-        {skills.soft.map((s) => <li>{s}</li>)}
       </ul>
     </ResumeSection>
 

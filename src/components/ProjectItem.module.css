@@ -26,7 +26,7 @@
   color: var(--c-ink-soft);
   line-height: 1.45;
 }
-/* Middot-separated keyword line, centered in its grid column — the same meta
+/* Middot-separated keyword line, centered in its grid column - the same meta
    tier and centered rhythm as the experience tag band. */
 .tags {
   margin-top: var(--space-2xs);
