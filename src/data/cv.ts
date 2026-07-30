@@ -75,7 +75,7 @@ export const cv: CV = {
     ],
   },
   about:
-    "I build distributed systems and ML infrastructure end to end, along with the teams and companies around them. As the sole founder of Batteries Included, I raised a pre-revenue round and shipped a self-driving cloud platform: Kubernetes orchestration, vector databases, service mesh, and LLM inference serving on anyone's hardware with a single button press. At Facebook, I was a senior tech lead on the Ads Foundation, keeping the ML-driven ads infrastructure serving billions of people stable, fast, and correct. Before that, I ran some of the largest OLTP key-value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
+    "I build distributed systems and ML infrastructure end to end, along with the teams and companies around them. As the sole founder of Batteries Included, I raised a pre-revenue round and shipped a self-driving cloud platform. At Facebook, I was a senior tech lead on the Ads Foundation, keeping the ML-driven ads infrastructure serving billions of people stable, fast, and correct. Before that, I ran some of the largest OLTP key‑value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
   work: [
     {
       company: 'Batteries Included',
@@ -84,7 +84,7 @@ export const cv: CV = {
       end: '2026',
       achievements: [
         'Founded Batteries Included, incorporated the company, and raised a $1.2M seed from Race Capital to fund a cross-functional team.',
-        'Built the team from one to seven, recruiting, onboarding, and sprint planning, into a fast-paced group shipping beautiful, easy-to-use, open-source software.',
+        'Built the team from 1 to 7, recruiting, onboarding, and sprint planning, into a group who shipped 75 releases of beautiful, easy-to-use, open-source software.',
         'Led the creation of a self-driving cloud platform that launches Kubernetes, vector databases, serverless web, and LLM inference with a single button press.',
         'Ran the company beyond the code: marketing, go-to-market, customer discovery, project delivery, and stakeholder management from seed pitch through investor reporting.',
       ],
@@ -120,7 +120,12 @@ export const cv: CV = {
         "Designed and drove the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
         'Migrated all of Messenger to use open source HBase, improving performance and security while giving back to the world.',
       ],
-      softTags: ['Tech Lead', 'Mentoring'],
+      softTags: [
+        'Tech Lead',
+        'Mentoring',
+
+        'Data Science',
+      ],
       hardTags: [
         'C++',
         'Machine Learning',
@@ -128,7 +133,6 @@ export const cv: CV = {
         'HBase',
         'Hadoop',
         'Linux',
-        'Data Science',
         'Containers',
         'CI/CD',
       ],
@@ -178,7 +182,7 @@ export const cv: CV = {
         "Built software to start, stop, and add to Hadoop/HBase/Zookeeper clusters on Amazon's EC2 allowing the group to rapidly adopt Hadoop and HBase.",
         'Designed and implemented JavaScript UI to display tens of thousands of data points per day per game in a discoverable HTML interface.',
       ],
-      softTags: ['Mentoring', 'Tech Lead'],
+      softTags: ['Mentoring', 'Tech Lead', 'Data Science', 'Full-stack'],
       hardTags: [
         'AWS',
         'Scala',
@@ -187,7 +191,6 @@ export const cv: CV = {
         'HBase',
         'JavaScript',
         'Python',
-        'Data Science',
       ],
     },
     {
@@ -200,7 +203,8 @@ export const cv: CV = {
         'Implemented real-time and background content scraping systems to process and display pricing data from external web sources.',
         'Halved page load time by optimizing database access, creating automatic asset minification scripts, configuring caching, and other web development best practices.',
       ],
-      hardTags: ['Full-stack', 'Rails', 'Web Scraping', 'Performance'],
+      softTags: ['Full-stack'],
+      hardTags: ['Rails', 'Web Scraping', 'MongoDB'],
     },
     {
       company: 'Microsoft',
@@ -242,7 +246,7 @@ export const cv: CV = {
       tagline:
         'A snapshot-testing library for Phoenix and LiveView components - catches rendered-markup regressions before they ship.',
       link: 'https://github.com/batteries-included/heyya',
-      tags: ['Elixir', 'Phoenix', 'Testing'],
+      tags: ['Elixir', 'Phoenix'],
     },
     {
       name: 'rs-poker',
@@ -277,7 +281,7 @@ export const cv: CV = {
       tagline:
         "Facebook's base C++ library providing threading, locking, collections, metrics and other base components of observable performant C++ code.",
       link: 'https://github.com/facebook/folly',
-      tags: ['C++', 'Concurrency', 'Correctness'],
+      tags: ['C++', 'Concurrency'],
     },
   ],
 };
