@@ -114,7 +114,7 @@ export const cv: CV = {
       end: '2021',
       achievements: [
         'Owned stability, performance, correctness, scalability, and disaster readiness for all of Ads infrastructure.',
-        'Directed incident response for critical Ads outages, achieving root-cause resolution within SLA.',
+        'Directed incident response for critical Ads outages, achieving root-cause resolution within SLA and post incident team mentorship',
         'Created automatic A/B statistical testing and automated CI/CD of the most critical machine learning ads targeting and bidding systems.',
         'Introduced a novel automated traffic-guided fuzzing test for revenue-critical microservices, reducing runtime crashes by up to 90% and increasing revenue, ML/AI capacity, and reliability.',
         "Designed and drove the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
@@ -128,6 +128,7 @@ export const cv: CV = {
         'HBase',
         'Hadoop',
         'Linux',
+        'Data Science',
         'Containers',
         'CI/CD',
       ],
@@ -144,7 +145,14 @@ export const cv: CV = {
         'Created new UI for HBase Master and Regionserver daemons increasing adoption of HBase.',
       ],
       softTags: ['Customer Outreach'],
-      hardTags: ['HBase', 'Hadoop','HDFS', 'HBase', 'Java', 'Distributed Tracing'],
+      hardTags: [
+        'HBase',
+        'Hadoop',
+        'HDFS',
+        'HBase',
+        'Java',
+        'Distributed Tracing',
+      ],
     },
     {
       company: 'StumbleUpon',
@@ -170,8 +178,17 @@ export const cv: CV = {
         "Built software to start, stop, and add to Hadoop/HBase/Zookeeper clusters on Amazon's EC2 allowing the group to rapidly adopt Hadoop and HBase.",
         'Designed and implemented JavaScript UI to display tens of thousands of data points per day per game in a discoverable HTML interface.',
       ],
-      softTags: ['Mentoring','Tech Lead'],
-      hardTags: ['AWS', 'Scala', 'Akka', 'Hadoop', 'HBase', 'JavaScript'],
+      softTags: ['Mentoring', 'Tech Lead'],
+      hardTags: [
+        'AWS',
+        'Scala',
+        'Akka',
+        'Hadoop',
+        'HBase',
+        'JavaScript',
+        'Python',
+        'Data Science',
+      ],
     },
     {
       company: '316 Ventures',
@@ -246,7 +263,7 @@ export const cv: CV = {
       tagline:
         "A GPT-style model that uses masked game sequence patterns to predict an opponent's hidden hole cards, using factored embeddings and suit-permutation symmetry.",
       link: 'https://github.com/Otter-Crew/range-reader',
-      tags: ['PyTorch', 'Transformers', 'AI', 'ML'],
+      tags: ['PyTorch', 'Transformers', 'AI', 'ML', 'Python', 'GPT'],
     },
     {
       name: 'HBase',
