@@ -97,7 +97,6 @@ export const cv: CV = {
       ],
       hardTags: [
         'Elixir',
-        'AI',
         'ML',
         'LLM Inference',
         'Kubernetes',
@@ -120,16 +119,10 @@ export const cv: CV = {
         "Designed and drove the implementation and production deployment of a unique datastore, with Linux kernel network block device and Open Compute storage hardware, powering Facebook's Dynamic Audience API.",
         'Migrated all of Messenger to use open source HBase, improving performance and security while giving back to the world.',
       ],
-      softTags: [
-        'Tech Lead',
-        'Mentoring',
-
-        'Data Science',
-      ],
+      softTags: ['Tech Lead', 'Mentoring', 'Data Science'],
       hardTags: [
         'C++',
-        'Machine Learning',
-        'Fuzz Testing',
+        'ML',
         'HBase',
         'Hadoop',
         'Linux',
@@ -144,19 +137,12 @@ export const cv: CV = {
       end: '2014',
       achievements: [
         "Developed, built, debugged, and deployed open source Hadoop based solutions to customers' on premises and in cloud clusters.",
-        'Instrumented HBase and HDFS to enable RPC tracing using HTrace and Zipkin; the Dapper like system enables HBase developers to debug and tune their uses of HBase with more confidence.',
+        'Instrumented HBase and HDFS to enable RPC tracing using HTrace and Zipkin; the Dapper like system for RPC tracing in open source.',
         'Created a new compaction algorithm that has 10x better hardware utilization.',
         'Created new UI for HBase Master and Regionserver daemons increasing adoption of HBase.',
       ],
       softTags: ['Customer Outreach'],
-      hardTags: [
-        'HBase',
-        'Hadoop',
-        'HDFS',
-        'HBase',
-        'Java',
-        'Distributed Tracing',
-      ],
+      hardTags: ['HBase', 'Hadoop', 'Java'],
     },
     {
       company: 'StumbleUpon',
@@ -168,7 +154,7 @@ export const cv: CV = {
         'Deployed new versions of HBase to production clusters with no downtime, fixing issues and improving data store performance.',
         'Created new Stochastic Load Balancer that optimizes data locality, request throughput, and data sizes to better utilize server resources.',
       ],
-      hardTags: ['HBase', 'Java', 'Load Balancing'],
+      hardTags: ['HBase', 'Java'],
     },
     {
       company: 'ngmoco;)',
@@ -177,21 +163,13 @@ export const cv: CV = {
       end: '2012',
       achievements: [
         'Promoted twice into a position managing individual contributors in the Analytics group.',
-        'Created Scala server infrastructure, including servlet front-end and Akka back-end services. The new design improved performance, up to 15k messages per second per server, and allowed for new features.',
+        'Created Scala ingestion server infrastructure; the new design improved performance, up to 15k messages per second per server, and allowed for new features.',
         'Architected Hadoop jobs using Hadoop, Avro, and HBase that allow executives, designers, and engineers to track revenue and user behavior from more than a billion messages a day.',
         "Built software to start, stop, and add to Hadoop/HBase/Zookeeper clusters on Amazon's EC2 allowing the group to rapidly adopt Hadoop and HBase.",
         'Designed and implemented JavaScript UI to display tens of thousands of data points per day per game in a discoverable HTML interface.',
       ],
       softTags: ['Mentoring', 'Tech Lead', 'Data Science', 'Full-stack'],
-      hardTags: [
-        'AWS',
-        'Scala',
-        'Akka',
-        'Hadoop',
-        'HBase',
-        'JavaScript',
-        'Python',
-      ],
+      hardTags: ['AWS', 'Scala', 'Hadoop', 'HBase', 'JavaScript', 'Python'],
     },
     {
       company: '316 Ventures',
@@ -204,7 +182,7 @@ export const cv: CV = {
         'Halved page load time by optimizing database access, creating automatic asset minification scripts, configuring caching, and other web development best practices.',
       ],
       softTags: ['Full-stack'],
-      hardTags: ['Rails', 'Web Scraping', 'MongoDB'],
+      hardTags: ['Rails', 'Ruby'],
     },
     {
       company: 'Microsoft',
@@ -219,7 +197,7 @@ export const cv: CV = {
         'Spearheaded the effort to create a .NET WPF implementation of Microsoft Ribbon; implemented the custom window code to allow integration into the title bar.',
         'Drove customer adoption of WPF solutions by answering questions on MSDN Forums and Codeplex.com.',
       ],
-      hardTags: ['C#', '.NET', 'C++', 'WPF'],
+      hardTags: ['C#', 'C++', 'WPF'],
     },
     {
       company: 'Microsoft',
@@ -231,7 +209,7 @@ export const cv: CV = {
         'Collaborated with multiple teams to implement new streams of revenue.',
         'Developed XML tools to deliver MSDN Magazine online using the WPF News Reader SDK.',
       ],
-      hardTags: ['C#', '.NET', 'WPF', 'XML'],
+      hardTags: ['C#', 'WPF'],
     },
   ],
   education: [
@@ -253,7 +231,7 @@ export const cv: CV = {
       tagline:
         "A Rust library for poker: fast hand evaluation, range parsing, and Texas Hold'em game logic.",
       link: 'https://github.com/elliottneilclark/rs-poker',
-      tags: ['Rust', 'RL Arena', 'Performance'],
+      tags: ['Rust'],
     },
     {
       name: 'little-sorry',
@@ -267,21 +245,21 @@ export const cv: CV = {
       tagline:
         "A GPT-style model that uses masked game sequence patterns to predict an opponent's hidden hole cards, using factored embeddings and suit-permutation symmetry.",
       link: 'https://github.com/Otter-Crew/range-reader',
-      tags: ['PyTorch', 'Transformers', 'AI', 'ML', 'Python', 'GPT'],
+      tags: ['PyTorch', 'Transformers', 'ML', 'Python'],
     },
     {
       name: 'HBase',
       tagline:
         'BigTable inspired key value store focusing on consistency and correctness, while delivering world class key value storage speed.',
       link: 'https://hbase.apache.org/',
-      tags: ['Java', 'Key-Value Database', 'Distributed'],
+      tags: ['Java', 'Key-Value Database'],
     },
     {
       name: 'folly',
       tagline:
         "Facebook's base C++ library providing threading, locking, collections, metrics and other base components of observable performant C++ code.",
       link: 'https://github.com/facebook/folly',
-      tags: ['C++', 'Concurrency'],
+      tags: ['C++'],
     },
   ],
 };
