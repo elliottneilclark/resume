@@ -75,7 +75,7 @@ export const cv: CV = {
     ],
   },
   about:
-    "I build distributed systems and ML infrastructure end to end, along with the teams and companies around them. As the sole founder of Batteries Included, I raised a pre-revenue round and shipped a self-driving cloud platform. At Facebook, I was a senior tech lead on the Ads Foundation, keeping the ML-driven ads infrastructure serving billions of people stable, fast, and correct. Before that, I ran some of the largest OLTP key‑value stores in the world. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
+    "Senior Engineering Leader specializing in distributed systems & ML infrastructure. Founder & CEO of Batteries Included (raised $1.2M, built a self-driving cloud platform). Former Senior Tech Lead at Facebook Ads, scaling ML-driven ad services for billions. I care about correctness, latency, and scalability in production, and I'm looking to lead teams tackling hard, high-impact problems.",
   work: [
     {
       company: 'Batteries Included',
